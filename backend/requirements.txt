@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pandas
+numpy
+rapidfuzz
+scikit-learn
+sqlalchemy
+pydantic
+python-multipart
+faker
