@@ -1,13 +1,13 @@
 @echo off
 echo =======================================================
-echo Starting Trade Intelligence Platform (Phase 1)
+echo Starting CargoScope Platform
 echo =======================================================
 echo.
 echo Starting FastAPI Backend API...
-start "Trade Intelligence Backend" cmd /k "cd backend && venv\Scripts\activate && uvicorn main:app --reload --port 8000"
+start "CargoScope Backend" cmd /k "cd backend && venv\Scripts\activate && uvicorn main:app --reload --port 8000"
 
 echo Starting Vite React Frontend (Web)...
-start "Trade Intelligence Frontend" cmd /k "cd frontend && npm run dev"
+start "CargoScope Frontend" cmd /k "cd frontend && npm run dev"
 
 echo.
 echo Services are launching in separate windows!

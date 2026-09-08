@@ -31,7 +31,7 @@ from modules.admin.router import router as admin_router
 # Create tables if they do not exist (preserve existing data)
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Trade Intelligence Platform API")
+app = FastAPI(title="CargoScope API")
 
 # ─── CORS ─────────────────────────────────────────────────────────────────────
 app.add_middleware(
@@ -90,5 +90,5 @@ def health_db():
 
 @app.get("/")
 def read_root():
-    return {"message": "Trade Intelligence Platform API — see /docs"}
+    return {"message": "CargoScope API — see /docs"}
 

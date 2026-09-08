@@ -1,4 +1,4 @@
-# Trade Intelligence Platform — Full Documentation
+# CargoScope — Full Documentation
 
 > **Target User:** Ops/Logistics Managers who need to know what shipments are late, why, and which carriers are underperforming — without any data engineering background.
 
@@ -6,7 +6,7 @@
 
 ## 1. What This Platform Does
 
-The Trade Intelligence Platform is a **single-operator logistics analytics tool** that ingests raw CSV shipment exports, cleans and normalises the data automatically, stores it in a relational database, trains two machine-learning models on it, and surfaces the results as interactive dashboards, rankings, anomaly queues, and a predictive "what-if" simulator — all behind a secure login.
+CargoScope is a **single-operator logistics analytics tool** that ingests raw CSV shipment exports, cleans and normalises the data automatically, stores it in a relational database, trains two machine-learning models on it, and surfaces the results as interactive dashboards, rankings, anomaly queues, and a predictive "what-if" simulator — all behind a secure login.
 
 **In one sentence:** Upload a messy CSV → get instant visibility into delays, carrier performance, cost anomalies, and delay risk scores.
 

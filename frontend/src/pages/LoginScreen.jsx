@@ -153,7 +153,7 @@ export default function LoginScreen() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <Package size={20} color="var(--accent)" strokeWidth={2.5} />
           <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)', letterSpacing: -0.2 }}>
-            Trade Intel
+            CargoScope
           </span>
         </div>
 
@@ -197,7 +197,7 @@ export default function LoginScreen() {
           <div className="login-mobile-header">
             <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 8 }}>
               <Package size={18} color="var(--accent)" strokeWidth={2.5} />
-              <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)' }}>Trade Intel</span>
+              <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)' }}>CargoScope</span>
             </div>
             <p style={{ fontSize: 14, color: 'var(--text-secondary)', marginBottom: 28, lineHeight: 1.5 }}>
               Track shipments and measure carrier performance.
