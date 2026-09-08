@@ -1,184 +1,269 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { apiService } from '../services/apiService';
+import { useDataset } from '../features/datasets/DatasetContext';
 import {
-    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, Legend, ResponsiveContainer,
-    LineChart, Line, PieChart, Pie, Cell
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip,
+  ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell
 } from 'recharts';
-import { Package, Truck, DollarSign, Activity, AlertTriangle, Lightbulb, ChevronRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Package, Truck, DollarSign, Activity, AlertTriangle, ChevronRight } from 'lucide-react';
 
-const MetricCard = ({ title, value, icon: Icon, color, delay }) => (
-    <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay, duration: 0.5 }}
-        className="card glass kpi-card"
-    >
-        <div className="kpi-header">
-            <span className="kpi-title">{title}</span>
-            <div style={{ background: `${color}15`, padding: '8px', borderRadius: '10px' }}>
-                <Icon size={20} color={color} />
-            </div>
-        </div>
-        <div className="kpi-value" style={{ color: color === 'var(--danger)' ? color : 'var(--text-main)' }}>
-            {value}
-        </div>
-    </motion.div>
+// ─── Quiet stat card — color only on the number when it's a status ────────────
+const StatCard = ({ label, value, valueClass }) => (
+  <div className="kpi-card">
+    <div className="kpi-label">{label}</div>
+    <div className={`kpi-value ${valueClass || ''}`}>{value}</div>
+  </div>
 );
 
-const InsightItem = ({ icon: Icon, color, text }) => (
-    <div style={{ display: 'flex', gap: 12, padding: '16px 0', borderBottom: '1px solid var(--border-color)' }}>
-        <div style={{ color, marginTop: 2 }}>
-            <Icon size={18} />
-        </div>
-        <p style={{ fontSize: 14, color: 'var(--text-main)', lineHeight: 1.5 }}>{text}</p>
+// ─── Insight item — in the highlights panel ───────────────────────────────────
+const HighlightItem = ({ icon: Icon, tone, text }) => {
+  const toneColor = {
+    warning: 'var(--color-atrisk-text)',
+    error:   'var(--color-delayed-text)',
+    success: 'var(--color-ontime-text)',
+    info:    'var(--text-secondary)',
+  }[tone] || 'var(--text-secondary)';
+
+  return (
+    <div style={{
+      display: 'flex',
+      gap: 10,
+      padding: '13px 0',
+      borderBottom: '1px solid var(--border)',
+    }}>
+      <div style={{ color: toneColor, marginTop: 1, flexShrink: 0 }}>
+        <Icon size={16} />
+      </div>
+      <p style={{ fontSize: 13, color: 'var(--text-primary)', lineHeight: 1.55 }}>{text}</p>
     </div>
-);
+  );
+};
 
+// ─── Empty state ──────────────────────────────────────────────────────────────
+const EmptyDashboard = () => {
+  const navigate = useNavigate();
+  return (
+    <div className="empty-state" style={{ height: 420 }}>
+      <Package size={40} className="empty-state-icon" />
+      <h3>Nothing here yet</h3>
+      <p>Upload a trade dataset CSV to populate the dashboard and start tracking shipments.</p>
+      <button
+        className="btn-primary"
+        onClick={() => navigate('/sources/monitor')}
+        style={{ marginTop: 8 }}
+      >
+        Upload data
+      </button>
+    </div>
+  );
+};
+
+// ─── Dashboard ────────────────────────────────────────────────────────────────
 export default function DashboardScreen() {
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
+  const { activeDataset } = useDataset();
+  const [data, setData]       = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        loadDashboard();
-    }, []);
+  useEffect(() => {
+    if (!activeDataset) {
+      setLoading(false);
+      setData(null);
+      return;
+    }
+    loadDashboard();
+  }, [activeDataset?.id]);
 
-    const loadDashboard = async () => {
-        try {
-            const response = await apiService.getDashboard();
-            setData(response.data);
-        } catch (e) {
-            console.error(e);
-        } finally {
-            setLoading(false);
-        }
-    };
+  const loadDashboard = async () => {
+    setLoading(true);
+    try {
+      const response = await apiService.getDashboard(activeDataset.id);
+      setData(response.data);
+    } catch (e) {
+      console.error(e);
+      if (e?.response?.status === 409) {
+        setData(null);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    if (loading) return <div style={{ color: 'var(--primary)', fontWeight: 500 }}>Initializing Analytics Engine...</div>;
-    if (!data) return <div>No Analytics Available.</div>;
-
-    const { kpis, charts } = data;
-
-    // Mock data for pie chart delays based on kpis
-    const delayData = [
-        { name: 'On Time', value: kpis.total_shipments - kpis.delayed_shipments },
-        { name: 'Delayed', value: kpis.delayed_shipments }
-    ];
-    const COLORS = ['var(--success)', 'var(--danger)'];
-
-    // Mock data for trends
-    const trendData = [
-        { name: 'Jan', shipments: ~~(kpis.total_shipments * 0.1) },
-        { name: 'Feb', shipments: ~~(kpis.total_shipments * 0.15) },
-        { name: 'Mar', shipments: ~~(kpis.total_shipments * 0.22) },
-        { name: 'Apr', shipments: ~~(kpis.total_shipments * 0.18) },
-        { name: 'May', shipments: ~~(kpis.total_shipments * 0.35) },
-    ];
-
+  if (loading) {
     return (
-        <>
-            <div className="page-header">
-                <h1 className="page-title">Analytics Overview</h1>
-                <p className="page-subtitle">Real-time holistic view of trade network performance.</p>
-            </div>
-
-            <div className="kpi-grid">
-                <MetricCard title="Total Shipments" value={kpis.total_shipments.toLocaleString()} icon={Package} color="var(--primary)" delay={0.1} />
-                <MetricCard title="Delayed Shipments" value={kpis.delayed_shipments.toLocaleString()} icon={AlertTriangle} color="var(--danger)" delay={0.2} />
-                <MetricCard title="Average Cost" value={`$${kpis.average_cost.toLocaleString()}`} icon={DollarSign} color="var(--success)" delay={0.3} />
-                <MetricCard title="Active Routes" value={kpis.active_routes.toLocaleString()} icon={Activity} color="var(--text-main)" delay={0.4} />
-            </div>
-
-            <div className="charts-grid">
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="card glass">
-                    <h2 className="chart-title">Shipment Volume Trends</h2>
-                    <div style={{ width: '100%', height: 300 }}>
-                        <ResponsiveContainer>
-                            <LineChart data={trendData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                                <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" vertical={false} />
-                                <XAxis dataKey="name" stroke="var(--text-muted)" fontSize={12} tickLine={false} axisLine={false} />
-                                <YAxis stroke="var(--text-muted)" fontSize={12} tickLine={false} axisLine={false} />
-                                <RechartsTooltip
-                                    contentStyle={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 8, color: 'var(--text-main)' }}
-                                    itemStyle={{ color: 'var(--primary)' }}
-                                />
-                                <Line type="monotone" dataKey="shipments" stroke="var(--primary)" strokeWidth={3} dot={{ strokeWidth: 2, r: 4, fill: 'var(--bg-main)' }} activeDot={{ r: 6 }} />
-                            </LineChart>
-                        </ResponsiveContainer>
-                    </div>
-                </motion.div>
-
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="card glass">
-                    <h2 className="chart-title">AI Insights</h2>
-                    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
-                        <InsightItem
-                            icon={AlertTriangle} color="var(--danger)"
-                            text={<span>Delay prediction model indicates a <strong>15% higher risk</strong> on routes to Europe this week due to port congestion.</span>}
-                        />
-                        <InsightItem
-                            icon={Lightbulb} color="var(--primary)"
-                            text={<span>Consider prioritizing <strong>{charts.partner_performance?.[0]?.carrier || 'Primary'}</strong> for critical deliveries, currently holding a {charts.partner_performance?.[0]?.on_time_rate || 90}% on-time rate.</span>}
-                        />
-                        <InsightItem
-                            icon={Truck} color="var(--success)"
-                            text={<span>Cost Anomaly model is tracking normally with 0 new outliers in the last 24 hours.</span>}
-                        />
-                        <button style={{ background: 'transparent', border: 'none', color: 'var(--primary)', cursor: 'pointer', textAlign: 'left', fontWeight: 500, display: 'flex', alignItems: 'center', marginTop: 'auto', padding: '16px 0 0 0' }}>
-                            View all insights <ChevronRight size={16} />
-                        </button>
-                    </div>
-                </motion.div>
-            </div>
-
-            <div className="charts-grid">
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }} className="card glass">
-                    <h2 className="chart-title">Carrier On-Time Performance</h2>
-                    <div style={{ width: '100%', height: 300 }}>
-                        <ResponsiveContainer>
-                            <BarChart data={charts.partner_performance} margin={{ top: 20, right: 30, left: -20, bottom: 5 }}>
-                                <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" vertical={false} />
-                                <XAxis dataKey="carrier" stroke="var(--text-muted)" fontSize={12} tickLine={false} axisLine={false} />
-                                <YAxis stroke="var(--text-muted)" fontSize={12} tickLine={false} axisLine={false} />
-                                <RechartsTooltip
-                                    cursor={{ fill: 'var(--bg-sidebar)' }}
-                                    contentStyle={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 8, color: 'var(--text-main)' }}
-                                />
-                                <Bar dataKey="on_time_rate" fill="var(--primary)" name="On Time Rate (%)" radius={[4, 4, 0, 0]} />
-                            </BarChart>
-                        </ResponsiveContainer>
-                    </div>
-                </motion.div>
-
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }} className="card glass">
-                    <h2 className="chart-title">Delays Overview</h2>
-                    <div style={{ width: '100%', height: 300, position: 'relative' }}>
-                        <ResponsiveContainer>
-                            <PieChart>
-                                <Pie
-                                    data={delayData}
-                                    cx="50%"
-                                    cy="50%"
-                                    innerRadius={60}
-                                    outerRadius={100}
-                                    paddingAngle={5}
-                                    dataKey="value"
-                                    stroke="none"
-                                >
-                                    {delayData.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                    ))}
-                                </Pie>
-                                <RechartsTooltip contentStyle={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 8 }} />
-                            </PieChart>
-                        </ResponsiveContainer>
-                        {/* Center Label */}
-                        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-                            <div style={{ fontSize: 24, fontWeight: 'bold' }}> {((kpis.delayed_shipments / kpis.total_shipments) * 100).toFixed(1)}% </div>
-                            <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Delay Rate</div>
-                        </div>
-                    </div>
-                </motion.div>
-            </div>
-        </>
+      <div className="loading-row">
+        <div className="pulse-dot" />
+        Loading…
+      </div>
     );
+  }
+
+  const isEmpty = !data || (data.kpis?.total_shipments === 0);
+  if (isEmpty) return <EmptyDashboard />;
+
+  const { kpis, charts } = data;
+  const dynamicInsights   = data.insights || [];
+
+  const delayData = [
+    { name: 'On time',  value: kpis.total_shipments - kpis.delayed_shipments },
+    { name: 'Delayed',  value: kpis.delayed_shipments },
+  ];
+  const PIE_COLORS = ['var(--color-ontime-text)', 'var(--color-delayed-text)'];
+
+  const trendData = charts.shipment_volume_trend || [];
+
+  return (
+    <>
+      <div className="page-header">
+        <h1 className="page-title">Overview</h1>
+        <p className="page-subtitle">
+          Shipment volume, carrier performance, and open anomalies at a glance.
+        </p>
+      </div>
+
+      {/* ── KPI strip ── */}
+      <div className="kpi-grid">
+        <StatCard
+          label="Total shipments"
+          value={kpis.total_shipments.toLocaleString()}
+        />
+        <StatCard
+          label="Delayed shipments"
+          value={kpis.delayed_shipments.toLocaleString()}
+          valueClass={kpis.delayed_shipments > 0 ? 'status-delayed' : ''}
+        />
+        <StatCard
+          label="Average cost"
+          value={`$${kpis.average_cost.toLocaleString()}`}
+        />
+        <StatCard
+          label="Active routes"
+          value={kpis.active_routes.toLocaleString()}
+        />
+      </div>
+
+      {/* ── Charts row 1 ── */}
+      <div className="charts-grid" style={{ marginBottom: 20 }}>
+        <div className="card">
+          <div className="chart-title">Shipment volume</div>
+          <div style={{ width: '100%', height: 280 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={trendData} margin={{ top: 8, right: 8, left: -20, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                <XAxis dataKey="date" stroke="var(--text-muted)" fontSize={11} tickLine={false} axisLine={false} />
+                <YAxis stroke="var(--text-muted)" fontSize={11} tickLine={false} axisLine={false} />
+                <RechartsTooltip
+                  contentStyle={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 8, color: 'var(--text-primary)', fontSize: 12 }}
+                  itemStyle={{ color: 'var(--accent)' }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="volume"
+                  stroke="var(--accent)"
+                  strokeWidth={2}
+                  dot={false}
+                  activeDot={{ r: 4, fill: 'var(--accent)', strokeWidth: 0 }}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="chart-title">Highlights</div>
+          <div style={{ flex: 1, overflow: 'hidden' }}>
+            {dynamicInsights.length > 0 ? dynamicInsights.slice(0, 4).map((insight, idx) => (
+              <HighlightItem
+                key={idx}
+                icon={
+                  insight.type === 'error' || insight.type === 'warning'
+                    ? AlertTriangle
+                    : insight.type === 'success' ? Truck : Activity
+                }
+                tone={insight.type}
+                text={<span><strong>{insight.title}:</strong> {insight.message}</span>}
+              />
+            )) : (
+              <p style={{ fontSize: 13, color: 'var(--text-muted)', padding: '12px 0' }}>
+                No highlights yet — upload data to see patterns.
+              </p>
+            )}
+          </div>
+          {dynamicInsights.length > 4 && (
+            <button
+              style={{
+                background: 'transparent', border: 'none',
+                color: 'var(--accent)', cursor: 'pointer',
+                textAlign: 'left', fontWeight: 500, fontSize: 13,
+                display: 'flex', alignItems: 'center', gap: 4,
+                padding: '12px 0 0', fontFamily: 'inherit',
+              }}
+            >
+              View all <ChevronRight size={14} />
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* ── Charts row 2 ── */}
+      <div className="charts-grid">
+        <div className="card">
+          <div className="chart-title">Carrier on-time rate</div>
+          <div style={{ width: '100%', height: 280 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={charts.partner_performance || []} margin={{ top: 8, right: 8, left: -20, bottom: 5 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                <XAxis dataKey="carrier" stroke="var(--text-muted)" fontSize={11} tickLine={false} axisLine={false} />
+                <YAxis stroke="var(--text-muted)" fontSize={11} tickLine={false} axisLine={false} />
+                <RechartsTooltip
+                  cursor={{ fill: 'var(--bg-surface-2)' }}
+                  contentStyle={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }}
+                />
+                <Bar dataKey="on_time_rate" fill="var(--accent)" name="On-time rate (%)" radius={[4, 4, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="chart-title">Delays overview</div>
+          <div style={{ width: '100%', height: 280, position: 'relative' }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={delayData}
+                  cx="50%" cy="50%"
+                  innerRadius={56} outerRadius={90}
+                  paddingAngle={4}
+                  dataKey="value"
+                  stroke="none"
+                >
+                  {delayData.map((_, i) => (
+                    <Cell key={i} fill={PIE_COLORS[i % PIE_COLORS.length]} />
+                  ))}
+                </Pie>
+                <RechartsTooltip
+                  contentStyle={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+            {/* Donut center label */}
+            <div style={{
+              position: 'absolute', inset: 0,
+              display: 'flex', flexDirection: 'column',
+              alignItems: 'center', justifyContent: 'center',
+              pointerEvents: 'none',
+            }}>
+              <div style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)' }}>
+                {kpis.total_shipments > 0
+                  ? `${((kpis.delayed_shipments / kpis.total_shipments) * 100).toFixed(1)}%`
+                  : '—'}
+              </div>
+              <div style={{ fontSize: 11, color: 'var(--text-secondary)' }}>delay rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

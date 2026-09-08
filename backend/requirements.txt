@@ -8,3 +8,8 @@ sqlalchemy
 pydantic
 python-multipart
 faker
+joblib
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt<4.1
+python-dotenv

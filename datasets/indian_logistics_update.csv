@@ -1,0 +1,181 @@
+shipment_id,customer,origin,destination,order_date,carrier,cost,product,distance,expected_delivery,actual_delivery,weight,weight_unit,order_quantity,shipped_quantity,contracted_rate,accessorial
+SFX260800905,Rajdhani Furniture House,Patna,Chennai,2026-08-23,Safexpress,11314.57,Furniture,2159.9,2026-08-29,,61.7,kg,262,262,10378.7,Detention
+ECM260800906,Suraksha Leather Exports,Jaipur,Patna,2026-08-27,Ecom Express,10005.72,Auto Components,1313.0,2026-08-30,,321.9,lb,5,5,6562.17,Residential Delivery
+GTI260800907,Satpura Steel Traders,Coimbatore,Hyderabad,2026-08-22,Gati-KWE,7088.1,Steel Fabrication Parts,1029.5,2026-08-25,,161.5,kg,99,97,5567.05,Fuel Surcharge
+SFX260800908,Nationwide FMCG Traders,Patna,Kolkata,2026-08-27,Safexpress,4985.78,Packaged Foods,627.9,2026-08-29,,913.0,kg,190,190,3054.49,Liftgate
+DTD260800909,Rajdhani Furniture House,Patna,Bhopal,2026-08-23,DTDC,7565.63,FMCG Bulk Pack,1145.5,2026-08-27,,24.5,lb,135,135,6245.04,Fuel Surcharge
+TCI260800910,Aravalli Industrial Corp,Chandigarh,Delhi,2026-08-25,TCI Express,1971.27,Rubber Products,304.1,2026-08-26,,475.9,kg,190,190,1432.52,None
+ECM260800911,Aravalli Industrial Corp,Indore,Nagpur,2026-08-22,Ecom Express,3186.79,Industrial Machinery Parts,496.3,2026-08-23,,67.7,lb,95,95,2944.92,Detention
+XPB260800912,Himalayan Agro Exports,Visakhapatnam,Bhopal,2026-08-29,XpressBees,9457.03,Readymade Garments,1230.7,2026-09-01,,343.8,kg,386,386,8422.01,Residential Delivery
+TCI260800913,Brahmaputra Timber & Furniture,Delhi,Jaipur,2026-08-27,TCI Express,2518.62,FMCG Bulk Pack,329.9,2026-08-28,,529.8,kg,196,196,2589.37,None
+GTI260800914,Coastal Electronics Pvt Ltd,Kolkata,Hyderabad,2026-08-29,Gati-KWE,10390.33,Furniture,1679.7,2026-09-03,,441.2,kg,263,263,10765.3,None
+DTD260800915,Nationwide FMCG Traders,Patna,Pune,2026-08-25,DTDC,9682.05,FMCG Bulk Pack,1921.4,2026-08-30,,18.0,kg,433,433,9909.53,None
+TCI260800916,Krishna Textile Mills,Hyderabad,Mumbai,2026-08-23,TCI Express,4970.23,Cotton Textiles,893.5,2026-08-26,,427.6,kg,207,207,4588.11,Detention
+SFX260800917,Godavari Agro Processors,Delhi,Hyderabad,2026-08-25,Safexpress,7999.35,Cotton Textiles,1683.4,2026-08-30,,26.3,kg,99,99,8102.42,None
+SFX260800918,Deccan Industrial Supplies,Hyderabad,Bangalore,2026-08-29,Safexpress,4067.94,Leather Goods,681.1,2026-08-31,,43.1,kg,378,378,3530.51,Residential Delivery
+TCI260800919,Sahyadri Auto Ancillaries,Surat,Delhi,2026-08-23,TCI Express,6436.41,Furniture,1336.3,2026-08-27,,70.1,lb,483,483,6505.25,None
+TCI260800920,Malabar Spices & Foods,Hyderabad,Indore,2026-08-26,TCI Express,5082.88,Readymade Garments,852.9,2026-08-28,,41.4,kg,67,67,4135.33,Fuel Surcharge
+GTI260800921,Yamuna Electronics Ltd,Hyderabad,Pune,2026-08-28,Gati-KWE,4232.11,Ceramic Tiles,699.6,2026-08-30,,13.4,kg,430,430,3595.48,Detention
+TCI260800922,Thar Industrial Equipment,Lucknow,Nagpur,2026-08-22,TCI Express,5889.84,Rubber Products,953.8,2026-08-25,,418.7,kg,229,229,5148.62,Liftgate
+GTI260800923,Prime Auto Parts Co,Bangalore,Visakhapatnam,2026-08-28,Gati-KWE,5411.98,Industrial Machinery Parts,1063.8,2026-08-31,,92.5,kg,159,128,5548.69,None
+DTD260800924,Coastal Electronics Pvt Ltd,Bangalore,Mumbai,2026-08-27,DTDC,7502.56,Rubber Products,1140.0,2026-08-30,,41.2,kg,477,477,5351.47,Fuel Surcharge
+GTI260800925,Prime Auto Parts Co,Surat,Patna,2026-08-25,Gati-KWE,11625.45,Auto Components,1962.0,2026-08-31,,309.3,kg,140,140,11476.97,None
+TCI260800926,Thar Industrial Equipment,Indore,Patna,2026-08-28,TCI Express,7328.46,Rubber Products,1389.5,2026-09-01,,90.2,kg,448,448,7344.47,None
+TCI260800927,Suraksha Leather Exports,Visakhapatnam,Delhi,2026-08-23,TCI Express,9664.05,Leather Goods,1811.1,2026-08-28,,120.2,kg,6,6,9756.68,None
+XPB260800928,Krishna Textile Mills,Chennai,Bangalore,2026-08-28,XpressBees,2165.57,Industrial Machinery Parts,372.6,2026-08-29,,37.6,kg,166,166,2190.86,None
+TCI260800929,Yamuna Electronics Ltd,Surat,Bhopal,2026-08-22,TCI Express,4070.38,Electronic Appliances,753.0,2026-08-24,,398.6,lb,50,50,3879.35,None
+TCI260800930,Krishna Textile Mills,Jaipur,Mumbai,2026-08-27,TCI Express,7394.48,Auto Components,1309.3,2026-08-31,,230.4,kg,379,379,6620.85,Fuel Surcharge
+DLV260800931,Krishna Textile Mills,Pune,Guwahati,2026-08-26,Delhivery,19046.03,Ceramic Tiles,2636.4,2026-09-01,,10.1,kg,278,278,15937.68,Fuel Surcharge
+TCI260800932,Sunrise Rubber Industries,Pune,Guwahati,2026-08-29,TCI Express,12158.14,Packaged Foods,2788.8,2026-09-05,,20.9,kg,339,339,11462.59,None
+SFX260800933,Vindhya Machine Tools,Visakhapatnam,Pune,2026-08-23,Safexpress,6575.14,Electronic Appliances,1330.8,2026-08-26,,81.8,kg,158,135,6285.96,None
+ECM260800934,Deccan Industrial Supplies,Delhi,Kolkata,2026-08-26,Ecom Express,19890.16,Electronic Appliances,1760.7,2026-08-31,,1329.0,kg,261,261,19891.09,None
+TCI260800935,Himalayan Agro Exports,Ahmedabad,Lucknow,2026-08-29,TCI Express,6783.74,Leather Goods,1318.5,2026-09-02,,76.7,kg,109,109,6952.07,None
+TCI260800936,Suraksha Leather Exports,Jaipur,Coimbatore,2026-08-28,TCI Express,12420.75,Cotton Textiles,2553.7,2026-09-04,,17.3,kg,211,211,12849.93,None
+DLV260800937,Satpura Steel Traders,Guwahati,Surat,2026-08-27,Delhivery,20868.26,Readymade Garments,2816.8,2026-09-02,,43.1,kg,386,386,18523.51,Liftgate
+XPB260800938,Vindhya Machine Tools,Hyderabad,Chennai,2026-08-26,XpressBees,4420.75,Readymade Garments,699.3,2026-08-28,,197.9,kg,210,210,4448.2,None
+XPB260800939,Himalayan Agro Exports,Bhopal,Pune,2026-08-25,XpressBees,5712.38,FMCG Bulk Pack,869.9,2026-08-28,,118.6,kg,408,408,5709.12,None
+TCI260800940,Vishwakarma Steel Works,Guwahati,Surat,2026-08-24,TCI Express,16776.92,Ceramic Tiles,2861.2,2026-09-01,,819.5,lb,280,280,16187.78,None
+TCI260800941,Malabar Spices & Foods,Kolkata,Mumbai,2026-08-27,TCI Express,10540.64,Leather Goods,2298.3,2026-09-02,,29.0,kg,359,359,9899.26,Fuel Surcharge
+DLV260800942,Thar Industrial Equipment,Delhi,Nagpur,2026-08-25,Delhivery,8267.23,Cotton Textiles,1209.5,2026-08-28,,136.7,lb,483,483,8022.58,None
+GTI260800943,Brahmaputra Timber & Furniture,Bangalore,Delhi,2026-08-28,Gati-KWE,13244.85,Furniture,2446.8,2026-09-04,,88.2,kg,40,40,13495.06,None
+SFX260800944,Himalayan Agro Exports,Ahmedabad,Bangalore,2026-08-27,Safexpress,9928.93,Ceramic Tiles,1611.1,2026-09-01,,6.2,kg,360,360,8182.75,Redelivery Fee
+XPB260802000,Godavari Agro Processors,Kochi,Mumbai,2026-08-23,XpressBees,14005.99,Readymade Garments,1481.7,2026-08-27,2026-08-27,2920.7,lb,51,51,14324.39,None
+ECM260802001,Sunrise Rubber Industries,Kolkata,Patna,2026-08-26,Ecom Express,4480.4,FMCG Bulk Pack,675.3,2026-08-28,2026-08-27,68.7,kg,262,262,4299.04,None
+DTD260802002,Ganga Ceramics Ltd,Indore,Ahmedabad,2026-08-23,DTDC,3060.84,Packaged Foods,492.8,2026-08-25,2026-08-24,56.8,kg,175,175,2929.44,None
+ECM260802003,Rajdhani Furniture House,Lucknow,Ahmedabad,2026-08-23,Ecom Express,9473.95,Electronic Appliances,1304.8,2026-08-26,2026-08-26,9.0,kg,345,345,8173.19,Liftgate
+DLV260802004,Vindhya Machine Tools,Mumbai,Ahmedabad,2026-08-25,Delhivery,4504.22,Leather Goods,641.5,2026-08-26,2026-08-26,171.5,lb,377,377,4427.54,None
+ECM260802005,Satpura Steel Traders,Chandigarh,Mumbai,2026-08-26,Ecom Express,12420.92,Steel Fabrication Parts,1814.1,2026-08-31,,286.7,kg,294,294,12733.85,None
+GTI260802006,Brahmaputra Timber & Furniture,Kochi,Indore,2026-08-21,Gati-KWE,9877.44,Leather Goods,1910.1,2026-08-27,2026-08-25,27.6,lb,259,245,8895.0,Liftgate
+SHF260802007,Nilgiri Plantation Exports,Lucknow,Bhopal,2026-08-27,Shadowfax,6028.97,FMCG Bulk Pack,706.8,2026-08-29,2026-08-29,125.9,lb,180,180,5490.6,Fuel Surcharge
+GTI260802008,Brahmaputra Timber & Furniture,Delhi,Indore,2026-08-23,Gati-KWE,5078.35,Leather Goods,965.7,2026-08-26,2026-08-25,90.3,kg,13,13,5235.19,None
+TCI260802009,Thar Industrial Equipment,Hyderabad,Bangalore,2026-08-24,TCI Express,3600.49,Electronic Appliances,727.0,2026-08-26,2026-08-25,158.5,lb,238,238,3515.1,None
+ECM260802010,Kaveri FMCG Distributors,Chandigarh,Kolkata,2026-08-26,Ecom Express,15839.81,FMCG Bulk Pack,1941.6,2026-08-31,,441.0,kg,289,289,13679.55,Liftgate
+GTI260802011,Himalayan Agro Exports,Patna,Chennai,2026-08-24,Gati-KWE,11874.75,Packaged Foods,2148.4,2026-08-30,,122.1,kg,286,286,11458.99,None
+ECM260802012,Konkan Chemical Traders,Ahmedabad,Pune,2026-08-27,Ecom Express,6287.94,Furniture,711.9,2026-08-29,2026-08-29,560.7,kg,365,365,5622.25,Liftgate
+DTD260802013,Malabar Spices & Foods,Bhopal,Chennai,2026-08-21,DTDC,12355.47,Furniture,1672.1,2026-08-26,2026-08-27,225.3,kg,269,269,7612.79,Liftgate
+ECM260802014,Nilgiri Plantation Exports,Guwahati,Surat,2026-08-23,Ecom Express,14818.13,Industrial Machinery Parts,2586.2,2026-08-30,2026-08-29,56.7,kg,188,188,14576.51,None
+SHF260802015,Godavari Agro Processors,Visakhapatnam,Pune,2026-08-24,Shadowfax,9373.52,FMCG Bulk Pack,1404.1,2026-08-27,2026-08-27,60.2,lb,30,30,9144.07,None
+DLV260802016,Coastal Electronics Pvt Ltd,Visakhapatnam,Kochi,2026-08-22,Delhivery,9943.48,Electronic Appliances,1533.9,2026-08-25,2026-08-26,159.4,lb,353,353,9917.83,None
+ECM260802017,Vishwakarma Steel Works,Guwahati,Indore,2026-08-28,Ecom Express,18978.77,Packaged Foods,2347.0,2026-09-03,,98.2,kg,387,387,15138.8,Residential Delivery
+TCI260802018,Shree Ganesh Textiles Pvt Ltd,Chennai,Kolkata,2026-08-23,TCI Express,9919.19,Chemical Drums,1973.1,2026-08-29,2026-08-27,37.0,kg,248,248,9595.05,None
+DTD260802019,Prime Auto Parts Co,Hyderabad,Bangalore,2026-08-23,DTDC,4366.83,Ceramic Tiles,697.5,2026-08-25,2026-08-25,113.3,kg,414,414,4474.9,None
+DTD260802020,Krishna Textile Mills,Chandigarh,Indore,2026-08-20,DTDC,7710.03,Industrial Machinery Parts,1302.0,2026-08-24,2026-08-23,161.2,lb,396,396,7529.51,None
+XPB260802021,Deccan Industrial Supplies,Chandigarh,Nagpur,2026-08-28,XpressBees,9122.27,Steel Fabrication Parts,1484.2,2026-09-01,,59.1,lb,458,458,9438.9,None
+TCI260802022,Vishwakarma Steel Works,Kochi,Chandigarh,2026-08-23,TCI Express,16246.36,Leather Goods,3008.8,2026-08-31,,475.5,lb,276,276,16176.68,None
+GTI260802023,Himalayan Agro Exports,Hyderabad,Lucknow,2026-08-20,Gati-KWE,8318.15,FMCG Bulk Pack,1475.3,2026-08-24,2026-08-25,90.4,kg,41,41,8090.96,None
+DLV260802024,Brahmaputra Timber & Furniture,Nagpur,Guwahati,2026-08-26,Delhivery,12705.26,Rubber Products,1993.1,2026-08-30,,111.0,kg,447,447,12627.45,None
+SFX260802025,Nationwide FMCG Traders,Patna,Guwahati,2026-08-28,Safexpress,5189.89,Ceramic Tiles,863.5,2026-08-30,,79.2,kg,70,53,4574.53,Redelivery Fee
+BLD260802026,Kaveri FMCG Distributors,Bangalore,Indore,2026-08-27,Blue Dart,18102.84,Chemical Drums,1492.4,2026-08-30,2026-08-29,350.1,kg,127,127,15887.35,Liftgate
+XPB260802027,Bharat Auto Components Ltd,Kolkata,Ahmedabad,2026-08-24,XpressBees,11355.55,Packaged Foods,2132.2,2026-08-29,2026-08-29,34.7,kg,472,472,10943.18,None
+ECM260802028,Godavari Agro Processors,Pune,Chandigarh,2026-08-21,Ecom Express,13966.96,FMCG Bulk Pack,1783.2,2026-08-26,2026-08-25,42.6,kg,51,51,8281.87,Fuel Surcharge
+DTD260802029,Prime Auto Parts Co,Coimbatore,Visakhapatnam,2026-08-25,DTDC,7472.99,Ceramic Tiles,1321.1,2026-08-29,,40.5,kg,346,346,7623.39,None
+TCI260802030,Thar Industrial Equipment,Visakhapatnam,Bangalore,2026-08-27,TCI Express,6149.48,Auto Components,1121.2,2026-08-30,,153.4,kg,498,498,6107.85,None
+ECM260802031,Nationwide FMCG Traders,Ahmedabad,Surat,2026-08-22,Ecom Express,2143.45,Electronic Appliances,279.9,2026-08-23,2026-08-23,65.4,kg,208,208,1874.9,Fuel Surcharge
+ECM260802032,Konkan Chemical Traders,Hyderabad,Kochi,2026-08-24,Ecom Express,7942.65,Readymade Garments,1146.9,2026-08-27,2026-08-27,393.5,lb,401,401,8224.52,None
+DTD260802033,Ganga Ceramics Ltd,Kochi,Pune,2026-08-21,DTDC,7736.69,Leather Goods,1361.3,2026-08-25,2026-08-26,107.4,lb,345,345,8019.98,None
+DLV260802034,Krishna Textile Mills,Kolkata,Jaipur,2026-08-20,Delhivery,10862.6,FMCG Bulk Pack,1749.5,2026-08-24,2026-08-25,23.5,kg,218,218,10539.05,None
+ECM260802035,Nationwide FMCG Traders,Jaipur,Ahmedabad,2026-08-19,Ecom Express,5351.33,Steel Fabrication Parts,694.2,2026-08-21,2026-08-21,133.2,lb,488,488,4224.08,Liftgate
+DLV260802036,Yamuna Electronics Ltd,Visakhapatnam,Bangalore,2026-08-28,Delhivery,7924.62,Rubber Products,1045.7,2026-08-30,,212.0,kg,188,188,8166.78,None
+DLV260802037,Rajdhani Furniture House,Pune,Bhopal,2026-08-27,Delhivery,6431.07,Electronic Appliances,844.3,2026-08-29,2026-08-28,47.0,lb,142,142,5179.33,Detention
+XPB260802038,Satpura Steel Traders,Surat,Nagpur,2026-08-25,XpressBees,4723.0,Auto Components,838.0,2026-08-27,2026-08-26,30.4,kg,338,338,4502.08,None
+XPB260802039,Godavari Agro Processors,Hyderabad,Indore,2026-08-22,XpressBees,6707.04,Cotton Textiles,941.3,2026-08-25,2026-08-24,446.7,kg,464,464,6305.5,None
+DTD260802040,Godavari Agro Processors,Patna,Coimbatore,2026-08-19,DTDC,21566.87,Readymade Garments,2629.9,2026-08-26,2026-08-27,723.3,kg,324,324,21226.72,None
+TCI260802041,Godavari Agro Processors,Bhopal,Bangalore,2026-08-23,TCI Express,8224.09,Chemical Drums,1535.4,2026-08-27,2026-08-27,132.7,kg,402,402,7062.74,Fuel Surcharge
+DTD260802042,Rajdhani Furniture House,Bangalore,Visakhapatnam,2026-08-25,DTDC,7367.37,Packaged Foods,1071.9,2026-08-28,2026-08-28,310.3,kg,300,300,7346.41,None
+XPB260802043,Vindhya Machine Tools,Chandigarh,Kolkata,2026-08-23,XpressBees,15797.93,Chemical Drums,2025.0,2026-08-28,2026-08-28,813.9,lb,333,333,14178.42,Residential Delivery
+DLV260802044,Godavari Agro Processors,Kolkata,Pune,2026-08-28,Delhivery,15230.93,Industrial Machinery Parts,2029.3,2026-09-02,,49.3,kg,30,30,13167.7,Detention
+DLV260802045,Vishwakarma Steel Works,Lucknow,Pune,2026-08-20,Delhivery,13208.39,Steel Fabrication Parts,1677.6,2026-08-23,2026-08-23,79.1,lb,47,47,10956.23,Liftgate
+SFX260802046,Shree Ganesh Textiles Pvt Ltd,Guwahati,Mumbai,2026-08-23,Safexpress,14298.15,Leather Goods,2854.5,2026-08-31,,56.4,kg,86,86,14807.34,None
+DTD260802047,Kaveri FMCG Distributors,Chandigarh,Indore,2026-08-19,DTDC,6566.7,Rubber Products,1244.3,2026-08-23,2026-08-23,50.9,kg,45,45,6584.93,None
+DLV260802048,Kaveri FMCG Distributors,Patna,Chandigarh,2026-08-28,Delhivery,8140.78,Furniture,1317.5,2026-08-31,,22.8,kg,364,364,8428.31,None
+DTD260802049,Ganga Ceramics Ltd,Coimbatore,Hyderabad,2026-08-26,DTDC,6077.11,Ceramic Tiles,1044.7,2026-08-29,2026-08-29,342.6,lb,277,277,5808.18,Detention
+GTI260802050,Himalayan Agro Exports,Indore,Visakhapatnam,2026-08-24,Gati-KWE,6777.1,Readymade Garments,1242.8,2026-08-27,2026-08-28,60.2,kg,256,256,6821.58,None
+MHL260802051,Nationwide FMCG Traders,Hyderabad,Visakhapatnam,2026-08-18,Mahindra Logistics,3234.36,Electronic Appliances,673.4,2026-08-21,2026-08-19,4.6,kg,115,115,3291.75,None
+GTI260802052,Vishwakarma Steel Works,Lucknow,Pune,2026-08-21,Gati-KWE,8614.95,Readymade Garments,1572.6,2026-08-26,2026-08-25,27.5,kg,71,71,8886.72,None
+XPB260802053,Yamuna Electronics Ltd,Visakhapatnam,Chandigarh,2026-08-18,XpressBees,14561.12,Packaged Foods,2185.0,2026-08-23,2026-08-22,22.7,lb,361,361,13457.81,Fuel Surcharge
+ECM260802054,Bharat Auto Components Ltd,Mumbai,Nagpur,2026-08-28,Ecom Express,5902.93,Leather Goods,917.2,2026-08-30,,245.2,kg,184,184,5857.25,None
+DLV260802055,Kaveri FMCG Distributors,Nagpur,Patna,2026-08-21,Delhivery,7879.29,Leather Goods,1120.1,2026-08-24,2026-08-24,100.1,kg,356,356,7914.89,None
+SFX260802056,Thar Industrial Equipment,Visakhapatnam,Kochi,2026-08-26,Safexpress,7625.65,Rubber Products,1594.5,2026-08-30,2026-08-29,18.0,kg,230,230,7849.37,None
+ECM260802057,Vindhya Machine Tools,Indore,Kochi,2026-08-21,Ecom Express,11177.78,Auto Components,1977.3,2026-08-26,2026-08-27,10.5,kg,56,56,11390.64,None
+DLV260802058,Yamuna Electronics Ltd,Bangalore,Mumbai,2026-08-23,Delhivery,7567.76,Ceramic Tiles,1206.8,2026-08-26,2026-08-26,12.8,kg,8,8,7180.57,None
+SHF260802059,Krishna Textile Mills,Visakhapatnam,Indore,2026-08-23,Shadowfax,10479.44,Steel Fabrication Parts,1362.5,2026-08-26,2026-08-26,34.3,kg,467,467,9142.59,Liftgate
+GTI260802060,Aravalli Industrial Corp,Visakhapatnam,Nagpur,2026-08-18,Gati-KWE,5242.67,Cotton Textiles,814.0,2026-08-21,2026-08-21,45.0,kg,332,332,3088.28,Detention
+DTD260802061,Prime Auto Parts Co,Lucknow,Pune,2026-08-26,DTDC,8984.37,Packaged Foods,1651.6,2026-08-30,,374.6,lb,301,301,8475.89,None
+TCI260802062,Satpura Steel Traders,Surat,Patna,2026-08-21,TCI Express,10896.12,Packaged Foods,1873.8,2026-08-27,2026-08-27,105.4,kg,374,374,8812.51,Fuel Surcharge
+TCI260802063,Brahmaputra Timber & Furniture,Hyderabad,Chandigarh,2026-08-19,TCI Express,10970.35,Electronic Appliances,2048.8,2026-08-25,2026-08-24,260.4,kg,393,393,10705.07,None
+DLV260802064,Sahyadri Auto Ancillaries,Jaipur,Visakhapatnam,2026-08-23,Delhivery,14617.35,Steel Fabrication Parts,1701.4,2026-08-27,2026-08-26,816.8,lb,327,327,13416.71,Liftgate
+XPB260802065,Ganga Ceramics Ltd,Ahmedabad,Surat,2026-08-19,XpressBees,1932.95,Industrial Machinery Parts,295.7,2026-08-20,2026-08-19,85.1,kg,96,96,1833.56,None
+BLD260802066,Rajdhani Furniture House,Kolkata,Pune,2026-08-26,Blue Dart,22759.44,Ceramic Tiles,2174.3,2026-08-29,2026-08-29,15.7,lb,344,344,22528.07,None
+SFX260802067,Bharat Auto Components Ltd,Nagpur,Bangalore,2026-08-18,Safexpress,6991.66,Auto Components,1320.0,2026-08-22,2026-08-22,82.8,kg,325,325,6770.1,None
+DTD260802068,Prime Auto Parts Co,Visakhapatnam,Chandigarh,2026-08-18,DTDC,10198.39,Packaged Foods,2040.7,2026-08-23,2026-08-25,36.2,kg,174,174,10046.85,None
+ECM260802069,Nationwide FMCG Traders,Patna,Hyderabad,2026-08-19,Ecom Express,9368.66,Chemical Drums,1474.3,2026-08-23,2026-08-23,23.0,kg,190,190,9643.83,None
+XPB260802070,Vishwakarma Steel Works,Nagpur,Kochi,2026-08-22,XpressBees,10035.62,Rubber Products,1846.8,2026-08-26,2026-08-26,136.5,lb,15,15,9769.63,None
+XPB260802071,Yamuna Electronics Ltd,Delhi,Mumbai,2026-08-25,XpressBees,10879.25,Readymade Garments,1568.2,2026-08-29,2026-08-29,457.4,kg,69,69,10895.2,None
+XPB260802072,Godavari Agro Processors,Nagpur,Kolkata,2026-08-20,XpressBees,8022.88,Ceramic Tiles,1361.3,2026-08-23,2026-08-23,220.2,kg,499,499,7780.83,None
+DTD260802073,Satpura Steel Traders,Patna,Jaipur,2026-08-24,DTDC,6406.55,Packaged Foods,1279.5,2026-08-27,2026-08-27,19.8,kg,461,461,6090.46,None
+GTI260802074,Yamuna Electronics Ltd,Indore,Ahmedabad,2026-08-26,Gati-KWE,3829.03,Cotton Textiles,484.5,2026-08-28,2026-08-28,318.7,kg,473,473,2127.35,Redelivery Fee
+ECM260802075,Vindhya Machine Tools,Kochi,Chandigarh,2026-08-21,Ecom Express,19206.69,Electronic Appliances,3004.1,2026-08-28,,34.4,lb,174,174,17462.03,Liftgate
+GTI260802076,Rajdhani Furniture House,Kochi,Mumbai,2026-08-22,Gati-KWE,7018.86,Steel Fabrication Parts,1432.4,2026-08-26,2026-08-26,32.6,kg,318,318,7069.34,None
+ECM260802077,Bharat Auto Components Ltd,Surat,Coimbatore,2026-08-26,Ecom Express,11470.76,Auto Components,1617.6,2026-08-30,2026-08-29,18.3,kg,415,415,9649.12,Liftgate
+GTI260802078,Brahmaputra Timber & Furniture,Delhi,Chandigarh,2026-08-28,Gati-KWE,2095.76,Packaged Foods,309.8,2026-08-29,2026-08-29,60.0,kg,226,226,2037.77,None
+XPB260802079,Nilgiri Plantation Exports,Patna,Ahmedabad,2026-08-18,XpressBees,11660.87,Packaged Foods,1873.8,2026-08-23,2026-08-22,153.3,kg,118,118,11372.05,None
+TCI260802080,Konkan Chemical Traders,Visakhapatnam,Ahmedabad,2026-08-26,TCI Express,8757.37,Packaged Foods,1708.7,2026-08-31,2026-08-29,45.5,kg,408,408,8254.33,None
+SFX260802081,Coastal Electronics Pvt Ltd,Patna,Coimbatore,2026-08-21,Safexpress,16889.22,Cotton Textiles,2619.4,2026-08-28,2026-08-28,769.9,kg,172,172,17176.83,None
+XPB260802082,Vindhya Machine Tools,Bangalore,Kochi,2026-08-27,XpressBees,3562.06,FMCG Bulk Pack,526.9,2026-08-28,,354.7,kg,430,430,3688.01,None
+XPB260802083,Sunrise Rubber Industries,Coimbatore,Jaipur,2026-08-21,XpressBees,13548.31,Leather Goods,2525.6,2026-08-27,2026-08-28,134.3,lb,218,218,13956.53,None
+TCI260802084,Coastal Electronics Pvt Ltd,Hyderabad,Indore,2026-08-26,TCI Express,4174.15,Cotton Textiles,867.4,2026-08-29,2026-08-27,24.0,lb,113,113,4276.86,None
+ECM260802085,Nationwide FMCG Traders,Nagpur,Bhopal,2026-08-26,Ecom Express,2821.76,Leather Goods,414.9,2026-08-27,2026-08-27,24.0,kg,411,411,2838.51,None
+DTD260802086,Vindhya Machine Tools,Bhopal,Jaipur,2026-08-28,DTDC,5268.43,Steel Fabrication Parts,604.9,2026-08-30,,1287.9,lb,369,369,4148.48,Liftgate
+GTI260802087,Godavari Agro Processors,Chandigarh,Bhopal,2026-08-20,Gati-KWE,5686.59,Furniture,1076.0,2026-08-23,2026-08-23,26.7,kg,11,11,5396.74,None
+TCI260802088,Vindhya Machine Tools,Surat,Visakhapatnam,2026-08-22,TCI Express,7843.74,Furniture,1546.7,2026-08-26,2026-08-26,190.0,kg,418,418,7539.98,None
+TCI260802089,Rajdhani Furniture House,Surat,Chennai,2026-08-24,TCI Express,7329.67,Leather Goods,1662.5,2026-08-29,2026-08-26,30.6,kg,110,110,7227.52,None
+XPB260802090,Konkan Chemical Traders,Bhopal,Lucknow,2026-08-20,XpressBees,4547.23,Readymade Garments,719.9,2026-08-22,2026-08-21,22.3,lb,306,236,4398.51,None
+DTD260802091,Aravalli Industrial Corp,Bangalore,Kolkata,2026-08-24,DTDC,11644.57,Ceramic Tiles,2156.7,2026-08-30,2026-08-29,355.2,lb,365,365,11529.0,None
+XPB260802092,Nationwide FMCG Traders,Indore,Surat,2026-08-20,XpressBees,3031.43,Electronic Appliances,504.5,2026-08-22,2026-08-22,47.7,kg,280,280,3141.01,None
+MHL260802093,Sahyadri Auto Ancillaries,Lucknow,Guwahati,2026-08-21,Mahindra Logistics,8836.3,Industrial Machinery Parts,1538.2,2026-08-26,2026-08-27,427.2,kg,279,279,8410.58,None
+DTD260802094,Malabar Spices & Foods,Chennai,Nagpur,2026-08-19,DTDC,6739.5,Furniture,1192.1,2026-08-22,2026-08-23,22.6,kg,325,325,6372.58,None
+DTD260802095,Brahmaputra Timber & Furniture,Patna,Hyderabad,2026-08-27,DTDC,9682.64,Auto Components,1510.4,2026-08-31,,211.3,kg,77,77,8736.69,Detention
+XPB260802096,Nationwide FMCG Traders,Hyderabad,Delhi,2026-08-20,XpressBees,10002.73,Rubber Products,1691.6,2026-08-24,2026-08-24,90.6,lb,376,376,10027.29,None
+SHF260802097,Ganga Ceramics Ltd,Hyderabad,Kolkata,2026-08-26,Shadowfax,13065.24,Furniture,1694.1,2026-08-30,,27.1,kg,345,345,11641.08,Fuel Surcharge
+DLV260802098,Deccan Industrial Supplies,Mumbai,Chandigarh,2026-08-23,Delhivery,15805.36,Auto Components,1890.7,2026-08-27,2026-08-28,352.5,lb,251,251,13735.35,Redelivery Fee
+SFX260802099,Bharat Auto Components Ltd,Jaipur,Surat,2026-08-20,Safexpress,6054.51,Leather Goods,988.4,2026-08-22,2026-08-23,524.4,kg,185,185,6231.23,None
+DTD260802100,Godavari Agro Processors,Patna,Coimbatore,2026-08-18,DTDC,12286.7,Furniture,2392.3,2026-08-25,2026-08-25,153.0,lb,77,77,11792.37,None
+DTD260802101,Bharat Auto Components Ltd,Pune,Hyderabad,2026-08-19,DTDC,3565.99,Cotton Textiles,671.8,2026-08-21,2026-08-21,97.9,lb,241,241,3619.79,None
+SFX260802102,Kaveri FMCG Distributors,Chandigarh,Visakhapatnam,2026-08-20,Safexpress,11109.38,Steel Fabrication Parts,2090.4,2026-08-26,2026-08-26,44.1,kg,432,432,10626.34,None
+ECM260802103,Deccan Industrial Supplies,Bangalore,Chennai,2026-08-28,Ecom Express,2838.01,Leather Goods,409.0,2026-08-29,,700.0,lb,265,265,2690.03,None
+GTI260802104,Krishna Textile Mills,Indore,Bangalore,2026-08-22,Gati-KWE,8795.56,FMCG Bulk Pack,1457.5,2026-08-26,2026-08-26,442.4,kg,336,336,8588.41,None
+TCI260802105,Thar Industrial Equipment,Pune,Jaipur,2026-08-26,TCI Express,5619.41,Industrial Machinery Parts,1233.5,2026-08-29,2026-08-29,22.5,kg,163,163,5459.26,None
+XPB260802106,Himalayan Agro Exports,Delhi,Pune,2026-08-27,XpressBees,9910.66,Cotton Textiles,1687.2,2026-08-31,,20.7,kg,2,2,9884.28,None
+DLV260802107,Coastal Electronics Pvt Ltd,Delhi,Visakhapatnam,2026-08-20,Delhivery,11077.33,Packaged Foods,1887.7,2026-08-24,2026-08-24,12.0,kg,48,48,11403.23,None
+BLD260802108,Godavari Agro Processors,Coimbatore,Delhi,2026-08-18,Blue Dart,28227.34,Packaged Foods,2628.7,2026-08-23,2026-08-22,113.1,lb,145,145,28814.65,None
+SFX260802109,Yamuna Electronics Ltd,Bhopal,Hyderabad,2026-08-24,Safexpress,4203.51,Industrial Machinery Parts,856.3,2026-08-27,2026-08-27,24.8,kg,331,331,4315.94,None
+GTI260802110,Vishwakarma Steel Works,Hyderabad,Kolkata,2026-08-19,Gati-KWE,7787.42,Electronic Appliances,1537.7,2026-08-24,2026-08-21,30.9,kg,112,112,7751.98,None
+XPB260802111,Godavari Agro Processors,Guwahati,Hyderabad,2026-08-20,XpressBees,14357.51,Auto Components,2434.4,2026-08-26,2026-08-25,128.1,lb,295,295,13841.9,None
+SFX260802112,Sunrise Rubber Industries,Visakhapatnam,Pune,2026-08-19,Safexpress,7958.93,FMCG Bulk Pack,1399.5,2026-08-23,2026-08-23,159.7,kg,374,374,5961.31,None
+DTD260802113,Brahmaputra Timber & Furniture,Surat,Kochi,2026-08-20,DTDC,12009.74,Steel Fabrication Parts,1760.6,2026-08-25,2026-08-24,68.1,kg,207,170,9884.04,Redelivery Fee
+DTD260802114,Malabar Spices & Foods,Surat,Delhi,2026-08-21,DTDC,7876.87,Industrial Machinery Parts,1259.5,2026-08-24,2026-08-26,577.6,lb,63,63,8131.79,None
+SFX260802115,Vindhya Machine Tools,Pune,Kochi,2026-08-21,Safexpress,7788.95,Auto Components,1289.3,2026-08-24,2026-08-22,870.6,lb,474,474,7926.13,None
+SFX260802116,Deccan Industrial Supplies,Bhopal,Chennai,2026-08-18,Safexpress,8234.29,Electronic Appliances,1510.8,2026-08-22,2026-08-21,69.7,kg,103,103,8178.7,None
+XPB260802117,Aravalli Industrial Corp,Jaipur,Coimbatore,2026-08-28,XpressBees,12354.35,Electronic Appliances,2302.4,2026-09-03,,30.0,kg,293,293,12720.49,None
+ECM260802118,Shree Ganesh Textiles Pvt Ltd,Delhi,Nagpur,2026-08-25,Ecom Express,7458.62,Leather Goods,1153.2,2026-08-28,2026-08-28,260.8,lb,38,38,7321.84,None
+SFX260802119,Coastal Electronics Pvt Ltd,Chennai,Guwahati,2026-08-27,Safexpress,13991.04,Readymade Garments,2641.1,2026-09-03,,237.9,kg,163,163,13950.19,None
+DLV260802120,Coastal Electronics Pvt Ltd,Ahmedabad,Kolkata,2026-08-24,Delhivery,15002.26,Leather Goods,2253.2,2026-08-29,2026-08-29,95.2,lb,48,48,14530.82,None
+SFX260802121,Yamuna Electronics Ltd,Bangalore,Patna,2026-08-19,Safexpress,11263.69,Furniture,2284.4,2026-08-25,2026-08-26,45.7,kg,260,254,11197.17,None
+ECM260802122,Krishna Textile Mills,Kolkata,Jaipur,2026-08-26,Ecom Express,11814.52,Auto Components,1919.6,2026-08-31,,57.1,lb,349,349,11399.59,None
+SFX260802123,Kaveri FMCG Distributors,Chandigarh,Visakhapatnam,2026-08-18,Safexpress,10595.58,Leather Goods,2210.0,2026-08-24,2026-08-23,36.7,kg,257,257,7285.9,None
+DTD260802124,Godavari Agro Processors,Hyderabad,Indore,2026-08-27,DTDC,4937.9,Cotton Textiles,873.6,2026-08-30,2026-08-27,146.8,kg,24,24,5037.16,None
+DLV260802125,Bharat Auto Components Ltd,Surat,Bangalore,2026-08-24,Delhivery,8675.43,Rubber Products,1483.0,2026-08-28,2026-08-27,37.1,kg,324,324,6093.67,None
+XPB260802126,Krishna Textile Mills,Ahmedabad,Chandigarh,2026-08-24,XpressBees,7713.89,Readymade Garments,1336.9,2026-08-28,2026-08-27,104.4,kg,278,278,7564.0,None
+TCI260802127,Aravalli Industrial Corp,Indore,Mumbai,2026-08-23,TCI Express,4185.12,Ceramic Tiles,739.4,2026-08-25,2026-08-26,262.2,kg,82,82,3949.92,None
+TCI260802128,Nilgiri Plantation Exports,Jaipur,Coimbatore,2026-08-25,TCI Express,12310.13,Readymade Garments,2373.3,2026-09-01,,94.5,kg,262,262,12101.51,None
+ECM260802129,Aravalli Industrial Corp,Mumbai,Bangalore,2026-08-22,Ecom Express,6547.03,Chemical Drums,1084.7,2026-08-25,2026-08-26,124.9,kg,70,70,6650.21,None
+DTD260802130,Vindhya Machine Tools,Guwahati,Pune,2026-08-27,DTDC,16297.95,Industrial Machinery Parts,2673.5,2026-09-03,,255.1,lb,340,340,16622.78,None
+XPB260802131,Kaveri FMCG Distributors,Visakhapatnam,Surat,2026-08-25,XpressBees,10164.37,Packaged Foods,1648.8,2026-08-29,2026-08-29,48.1,kg,428,428,7745.51,None
+BLD260802132,Nationwide FMCG Traders,Delhi,Chandigarh,2026-08-22,Blue Dart,3971.07,Cotton Textiles,324.2,2026-08-23,2026-08-22,73.1,kg,141,141,3906.87,None
+MHL260802133,Malabar Spices & Foods,Indore,Patna,2026-08-26,Mahindra Logistics,6303.73,Ceramic Tiles,1277.7,2026-08-30,2026-08-29,35.3,lb,55,55,5988.85,None
+BLD260802134,Kaveri FMCG Distributors,Kochi,Guwahati,2026-08-18,Blue Dart,33796.82,Cotton Textiles,3531.6,2026-08-24,2026-08-23,99.4,kg,216,216,34041.76,None
+TCI260802135,Suraksha Leather Exports,Mumbai,Jaipur,2026-08-27,TCI Express,6960.04,Packaged Foods,1333.8,2026-08-31,,420.6,lb,382,382,6661.15,None
+ECM260802136,Bharat Auto Components Ltd,Coimbatore,Guwahati,2026-08-28,Ecom Express,19808.45,Readymade Garments,3321.5,2026-09-05,,7.1,kg,247,247,19674.23,None
+BLD260802137,Vindhya Machine Tools,Surat,Hyderabad,2026-08-25,Blue Dart,10920.05,FMCG Bulk Pack,1033.4,2026-08-27,2026-08-27,167.8,kg,385,385,11349.75,None
+XPB260802138,Nationwide FMCG Traders,Kochi,Lucknow,2026-08-23,XpressBees,19139.6,Industrial Machinery Parts,2495.2,2026-08-29,2026-08-29,610.7,lb,237,237,15996.18,Detention
+BLD260802139,Malabar Spices & Foods,Kochi,Bangalore,2026-08-28,Blue Dart,5345.68,Chemical Drums,509.5,2026-08-29,2026-08-28,8.3,kg,302,302,5405.97,None
