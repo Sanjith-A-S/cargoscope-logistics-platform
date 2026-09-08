@@ -67,7 +67,7 @@ CargoScope is built with a decoupled, modular architecture where each operationa
     ┌───────────────────────────────┐       ┌───────────────────────────────┐
     │     SQLAlchemy ORM + SQLite   │       │   Scikit-Learn ML Engines     │
     │  Tenant & Dataset Scoped Data │       │   • Isolation Forest (Cost)   │
-    │  Shipments / Reviews / Audits │       │   • Random Forest (Delay Risk)│
+    │  Shipments / Reviews / Audits │       │   • Logistic Regression (Delay)│
     └───────────────────────────────┘       └───────────────────────────────┘
 ```
 
